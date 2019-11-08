@@ -1,2 +1,2 @@
 # design-pattern
-Design Patter in Go
+Design Pattern in Go
