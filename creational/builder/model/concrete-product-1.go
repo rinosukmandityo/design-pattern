@@ -1,0 +1,28 @@
+package model
+
+type normalBuilder struct {
+	windowType string
+	doorType   string
+	floor      int
+}
+
+func newNormalBuilder() iBuilder {
+	return &normalBuilder{}
+}
+func (b *normalBuilder) setWindowType() {
+	b.windowType = "Wooden Window"
+
+}
+func (b *normalBuilder) setDoorType() {
+	b.doorType = "Wooden Window"
+}
+func (b *normalBuilder) setNumFloor() {
+	b.floor = 2
+}
+func (b *normalBuilder) getHouse() house {
+	return house{
+		windowType: b.windowType,
+		doorType:   b.doorType,
+		floor:      b.floor,
+	}
+}
